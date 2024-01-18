@@ -6,13 +6,14 @@ import '../css/custom_styles.css';
 import './App.css';
 
 import LoginPage from '../Pages/LoginPage/LoginPage';
+import SearchPage from '../Pages/SearchPage/SearchPage';
 
 function App() {
   return (
     <div className="App">
 
-      <LoginPage/>
-
+      {/* <LoginPage/> */}
+      <SearchPage/>
     </div>
   );
 }
