@@ -513,6 +513,12 @@ a.customNav:hover {
     /* box-shadow: 0 0.5rem 0.8rem #00000080; */
 }
 
+.search-tabs.active {
+    background: #fff;
+    color: #0E61B3;
+    border-top: 3px solid #2474C3;
+}
+
 .panels {
     background: #fff;
     /* box-shadow: 0 2rem 2rem #00000080; */
@@ -525,8 +531,8 @@ a.customNav:hover {
 }
 
 .panel {
-    display: none;
-    animation: fadein 0.8s;
+    display: block;
+    animation: fadein 0.8s forwards;
 }
 
 @keyframes fadein {

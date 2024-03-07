@@ -5,9 +5,8 @@ import Navbar from "../../components/SearchPage/NavBar/Navbar";
 import Search from "../../components/SearchPage/Search/Search";
 import ScoreTable from "../../components/SearchPage/ScoreTable/ScoreTable";
 import Comments from "../../components/SearchPage/Comments/Comments";
-import Tabs from "../../components/SearchPage/Tabs/Tabs";
 import Footer from "../../components/SearchPage/Footer/Footer";
-
+import Tabs from "../../components/SearchPage/Tabs/Tabs";
 
 const SearchPage = () => {
 
@@ -15,28 +14,16 @@ const SearchPage = () => {
         <div>
             <Header/>
             <Navbar/>
-            <main>
-                <Search/>
-            </main>
-
+            <Search/>
+            <section className="bg-search p-2">
+                <ScoreTable/>
+                <Comments/>
+                <Tabs/>
+            </section>
+            <Footer/>
 
         </div>
     )
 }
 
 export default SearchPage;
-
-
-/**
- * 
-
-            <Navbar/>
-            <main>
-                <Search/>
-                <ScoreTable/>
-                <Comments/>
-                <Tabs/>
-            </main>
-            <Footer/>
-
- */

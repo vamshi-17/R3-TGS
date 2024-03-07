@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import loginPic from '../../images/login_pic.jpg';
+// import loginPic from '../../images/login_pic.jpg';
+
+import loginPic from '../../../images/login_pic.jpg';
+
 
 const Login = () => {
     // State variables to store user inputs
@@ -25,6 +28,7 @@ const Login = () => {
     // Handle form submission
     const handleSubmit = (event) => {
         event.preventDefault(); // Prevents default form submission behavior
+        
         console.log('Submitted with', { username, password, selectedOption });
         // Add login logic here, like sending a request to a server
     };
@@ -116,7 +120,7 @@ const Login = () => {
 
                                         {/* Submit button */}
                                         <div className="pb-2">
-                                            <button type="submit" className="btn btn-primary btn-lg w-100 font-weight-bold mt-4">Login</button>
+                                            <button type="submit" className="btn btn-primary btn-lg w-100 font-weight-bold mt-4" onClick={handleSubmit}>Login</button>
                                         </div>
 
                                     </form>

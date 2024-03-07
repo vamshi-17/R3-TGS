@@ -1,8 +1,8 @@
 import React from "react";
 
+import logo from '../../../images/login-logo.png'
 
-
-import logo from '../../images/login-logo.png';
+// import logo from '../../images/login-logo.png';
 
 
 const Header = () => {

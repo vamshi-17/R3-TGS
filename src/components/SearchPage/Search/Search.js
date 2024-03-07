@@ -10,7 +10,7 @@ const SearchBar = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('Searching for:', searchInput);
-        // Add your search logic here
+
     };
 
     return (
